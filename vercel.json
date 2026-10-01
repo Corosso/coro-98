@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/demos/kaizen",
+      "destination": "https://demo-kaizen.vercel.app/"
+    },
+    {
+      "source": "/demos/kaizen/:path*",
+      "destination": "https://demo-kaizen.vercel.app/:path*"
+    }
+  ]
+}

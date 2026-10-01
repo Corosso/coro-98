@@ -1,0 +1,19 @@
+{
+  "name": "Federico Rodriguez Franco",
+  "initials": "FR",
+  "osName": "FRF-98",
+  "tagline": "Ingeniero de sistemas · Medellín, Colombia",
+  "email": "fredolds180@gmail.com",
+  "intro": "¡Hola! Soy Federico, ingeniero de sistemas ubicado en Medellín, Colombia. Hice mi carrera en el Instituto Tecnológico Metropolitano (ITM), soy una persona sumamente curiosa, me apasiona mucho crear nuevas soluciones, resolver problemas, trabajar de la mano de equipos y el aprendizaje constante que esto conlleva.",
+  "longIntro": "A lo largo de mi carrera he trabajado con múltiples tecnologías, frameworks y lenguajes de programación. He acumulado experiencia sólida a través de proyectos universitarios, personales y laborales que me han permitido desarrollar un criterio técnico amplio y la capacidad de adaptarme rápidamente a nuevos entornos.",
+  "techStack": [
+    "Python", "Linux", "CSS", "Java", "Pygame", "C#", ".NET", "JavaScript",
+    "HTML", "Flask", "Django", "OpenCV", "SQL Server", "SQL Developer",
+    "Azure DevOps", "Git", "Docker"
+  ],
+  "links": {
+    "github": null,
+    "linkedin": null,
+    "mail": "mailto:fredolds180@gmail.com"
+  }
+}

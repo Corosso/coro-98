@@ -1,0 +1,22 @@
+# Dependencias y build output (Vercel ya las excluye, pero ser explícitos no hace daño)
+node_modules
+.next
+out
+build
+
+# Herramientas / git
+.vercel
+.git
+.gitignore
+
+# Env: nunca desplegar secretos. `.env.example` se conserva como referencia.
+.env
+.env.*
+!.env.example
+
+# Fuente local que no se sirve en runtime
+docs
+README.md
+
+# Demos: son proyectos Vercel aparte (o se copian a public/demos cuando aplique)
+demos

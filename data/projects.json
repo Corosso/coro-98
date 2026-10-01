@@ -1,0 +1,63 @@
+[
+  {
+    "slug": "kaizen",
+    "name": "Kaizen Fit Club",
+    "description": "Sistema de ventas e inventario para el gimnasio Kaizen Fit Club. Punto de venta con gestión de productos, historial de ventas, egresos, usuarios y promociones.",
+    "tech": ["Electron", "JavaScript", "SQLite", "HTML", "CSS"],
+    "image": "/images/projects/kaizen.png",
+    "github": null,
+    "demo": "/demos/kaizen/index.html",
+    "landing": null
+  },
+  {
+    "slug": "elijah",
+    "name": "Elijah",
+    "description": "Aplicación web fullstack para una empresa de transporte ejecutivo de lujo, con una interfaz moderna enfocada en la experiencia de usuario premium.",
+    "tech": ["TypeScript", "React", "Python", "Tailwind"],
+    "image": "/images/projects/elijah.png",
+    "github": null,
+    "demo": "/demos/elijah/index.html",
+    "landing": "https://elijahluxuryride.com/"
+  },
+  {
+    "slug": "vuenai",
+    "name": "VuenAI",
+    "description": "Plataforma de Business Intelligence impulsada por inteligencia artificial, con integración de la API Realtime de OpenAI para análisis de datos en tiempo real.",
+    "tech": ["Python", "OpenAI", "HTML", "CSS"],
+    "image": "/images/projects/vuenai.png",
+    "github": null,
+    "demo": "https://app.vuen.ai/",
+    "landing": null
+  },
+  {
+    "slug": "lum",
+    "name": "LÜM",
+    "description": "Plataforma en desarrollo para mi emprendimiento de moda nueva y de segunda mano. Landing page interactiva como demo del producto.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/projects/lum.png",
+    "github": null,
+    "demo": "/demos/lum/index.html",
+    "landing": "https://landing-lum.vercel.app/"
+  },
+  {
+    "slug": "esenciales",
+    "name": "Esenciales de taller",
+    "description": "Tienda de dropshipping de herramientas y mecánica automotriz: catálogo de repuestos, pago contra entrega y seguimiento de pedido para Colombia.",
+    "tech": ["Next.js", "TypeScript", "Tailwind", "Docker"],
+    "image": "/images/projects/esenciales.png",
+    "github": null,
+    "demo": "https://esencialesdetaller.com/",
+    "demoInBrowser": true,
+    "landing": null
+  },
+  {
+    "slug": "mentesuniversales",
+    "name": "mentesuniversales.com",
+    "description": "Landing page corporativa para Mentes Universales, una empresa de consultoría educativa.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/projects/mentesuniversales.png",
+    "github": null,
+    "demo": "https://mentesuniversales.com/",
+    "landing": null
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "fotos": [
+    {
+      "src": "https://placehold.co/800x600/00330f/00ff41?text=Foto+1",
+      "thumb": "https://placehold.co/160x120/00330f/00ff41?text=Foto+1",
+      "titulo": "Terminal bajo la lluvia",
+      "fecha": "2026-01-14"
+    },
+    {
+      "src": "https://placehold.co/800x600/001f09/00ff41?text=Foto+2",
+      "thumb": "https://placehold.co/160x120/001f09/00ff41?text=Foto+2",
+      "titulo": "Neón y código",
+      "fecha": "2026-02-03"
+    },
+    {
+      "src": "https://placehold.co/800x600/0a0a0a/00ff41?text=Foto+3",
+      "thumb": "https://placehold.co/160x120/0a0a0a/00ff41?text=Foto+3",
+      "titulo": "Pantalla en verde",
+      "fecha": "2026-03-22"
+    }
+  ],
+  "videos": [
+    {
+      "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "poster": "https://placehold.co/640x360/00330f/00ff41?text=Video+1",
+      "titulo": "Demo render 01"
+    },
+    {
+      "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "poster": "https://placehold.co/640x360/001f09/00ff41?text=Video+2",
+      "titulo": "Demo render 02"
+    }
+  ],
+  "mezclas": [
+    {
+      "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+      "thumb": "https://placehold.co/160x160/00330f/00ff41?text=DJ",
+      "titulo": "Mezcla 01 — Techno"
+    },
+    {
+      "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
+      "thumb": "https://placehold.co/160x160/001f09/00ff41?text=DJ",
+      "titulo": "Mezcla 02 — Ambient"
+    }
+  ],
+  "musica": [
+    {
+      "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "cover": "https://placehold.co/160x160/0a0a0a/00ff41?text=Track+1",
+      "titulo": "Cancion Uno",
+      "artista": "Artista A"
+    },
+    {
+      "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+      "cover": "https://placehold.co/160x160/0a0a0a/00ff41?text=Track+2",
+      "titulo": "Cancion Dos",
+      "artista": "Artista B"
+    },
+    {
+      "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+      "cover": "https://placehold.co/160x160/0a0a0a/00ff41?text=Track+3",
+      "titulo": "Cancion Tres",
+      "artista": "Artista C"
+    }
+  ]
+}
