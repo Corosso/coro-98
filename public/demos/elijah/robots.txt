@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /claim-account
+Disallow: /booking/confirmed
+
+Sitemap: https://elijahluxuryride.com/sitemap.xml
