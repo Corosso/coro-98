@@ -15,8 +15,8 @@ build
 !.env.example
 
 # Fuente local que no se sirve en runtime
-docs
+/docs
 README.md
 
-# Demos: son proyectos Vercel aparte (o se copian a public/demos cuando aplique)
-demos
+# Scratch de agentes (NO excluir public/demos, que es lo que se sirve)
+/demos
