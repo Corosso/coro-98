@@ -4,7 +4,7 @@ export default function StartMenu({ apps, site, onOpenApp, onShutDown }) {
   return (
     <div className="start-menu">
       <div className="start-menu-banner">
-        <span>FRF-98</span>
+        <span>coro-98</span>
       </div>
       <div className="start-menu-items">
         {apps.map((app) => (

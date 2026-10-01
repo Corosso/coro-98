@@ -1,7 +1,7 @@
-# FRF-98 — Guion del Reel / TikTok (9:16)
+# coro-98 — Guion del Reel / TikTok (9:16)
 
 Documento de producción para el reel que documenta la construcción del portafolio
-**FRF-98** — un escritorio estilo Windows 98 con identidad terminal/Matrix (verde `#00ff41`)
+**coro-98** — un escritorio estilo Windows 98 con identidad terminal/Matrix (verde `#00ff41`)
 de Federico Rodriguez Franco.
 
 - **Formato:** vertical 9:16 (1080×1920)
@@ -45,14 +45,14 @@ de Federico Rodriguez Franco.
 
 ### Shot 3 — Login / Gate (8–13 s)
 - **Duración:** 5 s
-- **Qué se ve:** Diálogo de acceso de **FRF-98**: barra de título verde oscuro «Acceder a FRF-98», badge «FR», campo de correo. Se escribe un correo y se pulsa «Entrar». Barra de progreso «Cargando sistema…».
+- **Qué se ve:** Diálogo de acceso de **coro-98**: barra de título verde oscuro «Acceder a coro-98», badge «FR», campo de correo. Se escribe un correo y se pulsa «Entrar». Barra de progreso «Cargando sistema…».
 - **Texto superpuesto:** «Le puse un login tipo terminal.»
 - **Sonido/efecto:** Teclado (typing) + beep de boot + «ding» al entrar.
 - **Transición:** Flash verde #00ff41 → disolución al escritorio.
 
 ### Shot 4 — Escritorio (13–22 s)
 - **Duración:** 9 s
-- **Qué se ve:** Desktop completo: Matrix Rain de fondo, iconos (📄 Sobre mí, 📁 Proyectos, 🎬 Audiovisual, 🎵 Reproductor, ✉️ Contacto), taskbar con «Inicio» y reloj. Se abre el menú Inicio con banner «FRF-98». Se arrastra una ventana (draggable) y se minimiza.
+- **Qué se ve:** Desktop completo: Matrix Rain de fondo, iconos (📄 Sobre mí, 📁 Proyectos, 🎬 Audiovisual, 🎵 Reproductor, ✉️ Contacto), taskbar con «Inicio» y reloj. Se abre el menú Inicio con banner «coro-98». Se arrastra una ventana (draggable) y se minimiza.
 - **Texto superpuesto:** «Un escritorio Win98 con alma Matrix.»
 - **Sonido/efecto:** Chime de Windows al abrir Inicio + clic de arrastre. Música base sigue.
 - **Transición:** Corte directo sincronizado al beat.
@@ -87,8 +87,8 @@ de Federico Rodriguez Franco.
 
 ### Shot 9 — Cierre / CTA (48–53 s)
 - **Duración:** 5 s
-- **Qué se ve:** Menú Inicio → «Apagar…» → pantalla negra con «Ya es seguro apagar el equipo.» Luego aparece el logo/badge «FRF-98» centrado.
-- **Texto superpuesto:** «FRF-98» + «link en bio ↗».
+- **Qué se ve:** Menú Inicio → «Apagar…» → pantalla negra con «Ya es seguro apagar el equipo.» Luego aparece el logo/badge «coro-98» centrado.
+- **Texto superpuesto:** «coro-98» + «link en bio ↗».
 - **Sonido/efecto:** SFX de apagado de Windows + fundido musical (tail).
 - **Transición:** Fade out final.
 
@@ -102,9 +102,9 @@ capturar en horizontal y reencuadrar en Resolve. Para las demos externas, captur
 
 | # | Captura | Qué mostrar / origen | Uso |
 |---|---|---|---|
-| 1 | `gate.png` | Diálogo de acceso FRF-98 (campo correo + progreso) | Shot 3 |
+| 1 | `gate.png` | Diálogo de acceso coro-98 (campo correo + progreso) | Shot 3 |
 | 2 | `desktop.png` | Escritorio completo: Matrix Rain + 5 iconos + taskbar | Shot 4 |
-| 3 | `start-menu.png` | Menú Inicio abierto (banner FRF-98 + Apagar…) | Shots 4, 9 |
+| 3 | `start-menu.png` | Menú Inicio abierto (banner coro-98 + Apagar…) | Shots 4, 9 |
 | 4 | `about.png` | Ventana info.txt con grid de tech chips | Shot 5 |
 | 5 | `projects.png` | Ventana Mis Proyectos con cards visibles | Shot 6 |
 | 6 | `demo-elijah.png` | https://elijahluxuryride.com/ (demo en vivo) | Shot 6 |

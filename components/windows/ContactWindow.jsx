@@ -20,7 +20,7 @@ export default function ContactWindow() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email: email.trim(),
-          subject: subject.trim() || 'Contacto FRF-98',
+          subject: subject.trim() || 'Contacto coro-98',
           message: message.trim(),
         }),
       });

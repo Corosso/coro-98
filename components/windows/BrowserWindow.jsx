@@ -82,7 +82,7 @@ export default function BrowserWindow({ initialUrl = 'https://esencialesdetaller
         <iframe
           key={nonce}
           src={url}
-          title="Navegador FRF-98"
+          title="Navegador coro-98"
           style={{ width: '100%', height: '100%', border: 'none' }}
         />
         <div

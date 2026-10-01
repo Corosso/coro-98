@@ -15,7 +15,7 @@ const vt323 = VT323({
 });
 
 export const metadata = {
-  title: "Federico Rodriguez Franco — FRF-98",
+  title: "Federico Rodriguez Franco — coro-98",
   description:
     "Portafolio de Federico Rodriguez Franco, ingeniero de sistemas. Un sistema operativo retro estilo Windows 98.",
   icons: {

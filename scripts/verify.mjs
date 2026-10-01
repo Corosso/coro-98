@@ -1,4 +1,4 @@
-// Verificación headless del escritorio FRF-98.
+// Verificación headless del escritorio coro-98.
 // Requiere: playwright + Chromium. Instalar con:  npm i -D playwright
 // (o usar un chromium del sistema vía executablePath).
 // Uso:  node scripts/verify.mjs   (con `npm run dev`/`npm start` corriendo en :3000 o :3111)

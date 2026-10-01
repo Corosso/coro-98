@@ -1,4 +1,4 @@
-# Deploy de FRF-98 en Vercel
+# Deploy de coro-98 en Vercel
 
 Guía para desplegar el portafolio (Next.js) en Vercel, incluyendo el setup del
 almacenamiento de correos (Vercel Blob) y el plan de rutas para demos.

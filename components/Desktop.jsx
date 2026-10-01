@@ -73,7 +73,7 @@ export default function Desktop() {
   // returning visitors skip the gate
   useEffect(() => {
     try {
-      if (localStorage.getItem('frf98-email')) setEntered(true);
+      if (localStorage.getItem('coro98-email')) setEntered(true);
     } catch {}
   }, []);
 
@@ -136,7 +136,7 @@ export default function Desktop() {
       });
     } catch {}
     try {
-      localStorage.setItem('frf98-email', email);
+      localStorage.setItem('coro98-email', email);
     } catch {}
     setEntered(true);
   };

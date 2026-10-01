@@ -43,12 +43,12 @@ export async function POST(request) {
       try {
         const resend = new Resend(process.env.RESEND_API_KEY);
         await resend.emails.send({
-          from: 'FRF-98 <onboarding@resend.dev>',
+          from: 'coro-98 <onboarding@resend.dev>',
           to: process.env.CONTACT_TO || 'fredolds180@gmail.com',
           reply_to: email,
-          subject: subject || 'Nuevo acceso desde FRF-98',
+          subject: subject || 'Nuevo acceso desde coro-98',
           html: `
-            <h2>Nuevo correo desde FRF-98</h2>
+            <h2>Nuevo correo desde coro-98</h2>
             <p><strong>De:</strong> ${email}</p>
             ${subject ? `<p><strong>Asunto:</strong> ${subject}</p>` : ''}
             ${message ? `<p><strong>Mensaje:</strong></p><p>${message}</p>` : '<p><em>Acceso (sin mensaje).</em></p>'}
