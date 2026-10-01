@@ -1,0 +1,50 @@
+{
+  "character": {
+    "name": "KERNEL",
+    "tagline": "tu asistente del sistema"
+  },
+  "tour": [
+    {
+      "title": "¡Bienvenido a coro-98!",
+      "body": "Soy KERNEL, tu asistente. Te guío en 30 segundos por este escritorio. Usá «Siguiente» para continuar."
+    },
+    {
+      "title": "Ventanas",
+      "body": "Haz doble clic en un icono para abrir una ventana. Arrástrala desde la barra de título y usa los botones para minimizar ( _ ), maximizar ( □ ) o cerrar ( ✕ )."
+    },
+    {
+      "title": "Mis Proyectos",
+      "body": "En 📁 Proyectos está todo lo que he construido. Cada tarjeta tiene «Probar demo ↗» para abrir el proyecto en vivo, aquí mismo, en el 🌐 Navegador."
+    },
+    {
+      "title": "Demos",
+      "body": "Las demos corren dentro de una ventana. Probalas: Kaizen (punto de venta), LÜM (tienda) y Elijah (transporte), entre otros."
+    },
+    {
+      "title": "Audiovisual",
+      "body": "En 🎬 Audiovisual está mi trabajo: fotos, videos y mezclas. En 🎵 Reproductor suena mi música."
+    },
+    {
+      "title": "Navegador",
+      "body": "El 🌐 Navegador abre sitios y demos. Si una página no carga embebida, usá el botón ↗ para abrirla en una pestaña nueva."
+    },
+    {
+      "title": "Listo",
+      "body": "Ya podés explorar. Cerrá esto con ✕ o «No molestar». Si me extrañás, abrime desde Inicio → Asistente."
+    }
+  ],
+  "tips": {
+    "elijah": {
+      "title": "Elijah — sesión demo",
+      "body": "Para navegar con sesión iniciada: demo@elijah.com / demo1234. Para el panel de admin: entrá con admin@elijah.com / admin1234 y se te habilita el acceso de administrador."
+    },
+    "kaizen": {
+      "title": "Kaizen — punto de venta",
+      "body": "Clic en «ABRIR CAJA» para iniciar. Agregá productos al carrito, cobrá y generá la factura. Todo con datos de muestra."
+    },
+    "lum": {
+      "title": "LÜM — tienda de moda",
+      "body": "Explorá las tiendas de muestra y sus productos. Es un catálogo funcional con datos de prueba."
+    }
+  }
+}

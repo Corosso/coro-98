@@ -13,8 +13,10 @@ import MediaWindow from './windows/MediaWindow';
 import PlayerWindow from './windows/PlayerWindow';
 import ContactWindow from './windows/ContactWindow';
 import BrowserWindow from './windows/BrowserWindow';
+import Assistant from './Assistant';
 import site from '@/data/site.json';
 import projects from '@/data/projects.json';
+import assistantData from '@/data/assistant.json';
 
 const APPS = [
   { id: 'about', title: 'info.txt — Sobre mí', label: 'Sobre mí', icon: '📄', width: 430, height: 470, Component: AboutWindow },
@@ -35,6 +37,8 @@ export default function Desktop() {
   const [shutdown, setShutdown] = useState(false);
   const [progress, setProgress] = useState({ loaded: 0, total: 0 });
   const [browserUrl, setBrowserUrl] = useState('https://esencialesdetaller.com/');
+  const [assistant, setAssistant] = useState({ open: false, mode: 'tour', step: 0, tipKey: null });
+  const [assistantDismissed, setAssistantDismissed] = useState(false);
 
   // preload demos/thumbnails behind the gate
   useEffect(() => {
@@ -76,6 +80,23 @@ export default function Desktop() {
       if (localStorage.getItem('coro98-email')) setEntered(true);
     } catch {}
   }, []);
+
+  // start the assistant tour after entering (unless dismissed)
+  useEffect(() => {
+    if (!entered) return;
+    let dismissed = false;
+    try {
+      dismissed = !!localStorage.getItem('coro98-assistant-dismissed');
+    } catch {}
+    if (dismissed) {
+      setAssistantDismissed(true);
+      return;
+    }
+    const t = setTimeout(() => {
+      setAssistant({ open: true, mode: 'tour', step: 0, tipKey: null });
+    }, 1200);
+    return () => clearTimeout(t);
+  }, [entered]);
 
   const focusApp = (id) => {
     setOrder((prev) => [...prev.filter((x) => x !== id), id]);
@@ -148,6 +169,39 @@ export default function Desktop() {
     } else {
       window.open(url, '_blank', 'noopener,noreferrer');
     }
+    const m = url && url.match(/\/demos\/([^/]+)/);
+    const slug = m ? m[1] : null;
+    if (slug && assistantData.tips[slug] && !assistantDismissed) {
+      setAssistant({ open: true, mode: 'tip', step: 0, tipKey: slug });
+    }
+  };
+
+  const closeAssistant = () =>
+    setAssistant((a) => ({ ...a, open: false }));
+
+  const dismissAssistant = () => {
+    setAssistantDismissed(true);
+    setAssistant((a) => ({ ...a, open: false }));
+    try {
+      localStorage.setItem('coro98-assistant-dismissed', '1');
+    } catch {}
+  };
+
+  const assistantNext = () =>
+    setAssistant((a) => {
+      if (a.step + 1 >= assistantData.tour.length) return { ...a, open: false };
+      return { ...a, step: a.step + 1 };
+    });
+
+  const assistantPrev = () =>
+    setAssistant((a) => ({ ...a, step: Math.max(0, a.step - 1) }));
+
+  const reopenAssistant = () => {
+    setAssistantDismissed(false);
+    try {
+      localStorage.removeItem('coro98-assistant-dismissed');
+    } catch {}
+    setAssistant({ open: true, mode: 'tour', step: 0, tipKey: null });
   };
 
   const taskApps = order.map((id) => {
@@ -210,6 +264,7 @@ export default function Desktop() {
             apps={APPS}
             site={site}
             onOpenApp={openApp}
+            onAssistant={reopenAssistant}
             onShutDown={() => {
               setStartOpen(false);
               setShutdown(true);
@@ -229,6 +284,22 @@ export default function Desktop() {
       </div>
 
       {!entered && <Gate progress={progress} site={site} onEnter={handleEnter} />}
+
+      {entered && assistant.open && !assistantDismissed && (
+        <Assistant
+          data={
+            assistant.mode === 'tip'
+              ? assistantData.tips[assistant.tipKey]
+              : assistantData.tour[assistant.step]
+          }
+          step={assistant.mode === 'tour' ? assistant.step : undefined}
+          total={assistantData.tour.length}
+          onNext={assistantNext}
+          onPrev={assistantPrev}
+          onClose={closeAssistant}
+          onDismiss={dismissAssistant}
+        />
+      )}
 
       {shutdown && (
         <div

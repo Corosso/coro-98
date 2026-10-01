@@ -751,3 +751,140 @@ button {
 .contact-status.err {
   color: #b00020;
 }
+
+/* ─────────────────────────────────────────
+   Assistant (KERNEL) — Clippy style
+   ───────────────────────────────────────── */
+.assistant {
+  position: fixed;
+  right: 16px;
+  bottom: 44px;
+  z-index: 1500;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  max-width: 400px;
+}
+.assistant-character {
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 6px rgba(0, 255, 65, 0.35));
+  animation: kernel-bob 3s ease-in-out infinite;
+}
+@keyframes kernel-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.kernel-face .kernel-eye {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: kernel-blink 4.5s infinite;
+}
+@keyframes kernel-blink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  93%, 96% { transform: scaleY(0.08); }
+}
+.assistant-bubble {
+  position: relative;
+  background: var(--surface);
+  box-shadow:
+    inset -1px -1px 0 var(--surface-darker),
+    inset 1px 1px 0 #fff,
+    inset -2px -2px 0 var(--surface-dark),
+    inset 2px 2px 0 #fff;
+  padding: 9px 11px;
+  min-width: 260px;
+  font-size: 12px;
+  color: var(--text);
+}
+.assistant-bubble::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  bottom: 14px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid var(--surface);
+}
+.assistant-head {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.assistant-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.assistant-name {
+  font-family: var(--font-display), "VT323", monospace;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #001f09;
+}
+.assistant-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  color: #222;
+}
+.assistant-close {
+  width: 18px;
+  height: 16px;
+  font-size: 10px;
+  line-height: 1;
+  background: var(--surface);
+  color: #000;
+  border: none;
+  padding: 0;
+  box-shadow:
+    inset -1px -1px 0 var(--surface-darker),
+    inset 1px 1px 0 #fff;
+}
+.assistant-close:active {
+  box-shadow:
+    inset 1px 1px 0 var(--surface-darker),
+    inset -1px -1px 0 #fff;
+}
+.assistant-body {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.assistant-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.assistant-step {
+  font-size: 10px;
+  color: #555;
+  margin-right: auto;
+}
+.assistant-actions button {
+  font-family: inherit;
+  font-size: 12px;
+  height: 22px;
+  padding: 0 9px;
+  background: var(--surface);
+  color: #000;
+  border: none;
+  box-shadow:
+    inset -1px -1px 0 var(--surface-darker),
+    inset 1px 1px 0 #fff;
+}
+.assistant-actions button:active {
+  box-shadow:
+    inset 1px 1px 0 var(--surface-darker),
+    inset -1px -1px 0 #fff;
+}
+.assistant-actions .assistant-primary {
+  background: linear-gradient(180deg, #00330f, #001f09);
+  color: var(--text-on-dark);
+  font-weight: 700;
+}
+.assistant-actions .assistant-mute {
+  color: #555;
+  font-size: 10px;
+}

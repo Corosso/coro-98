@@ -1,6 +1,6 @@
 'use client';
 
-export default function StartMenu({ apps, site, onOpenApp, onShutDown }) {
+export default function StartMenu({ apps, site, onOpenApp, onAssistant, onShutDown }) {
   return (
     <div className="start-menu">
       <div className="start-menu-banner">
@@ -17,6 +17,11 @@ export default function StartMenu({ apps, site, onOpenApp, onShutDown }) {
             <span>{app.menuLabel || app.title}</span>
           </button>
         ))}
+        <div className="start-menu-sep" />
+        <button className="start-menu-item" onClick={onAssistant}>
+          <span className="mi-icon">🤖</span>
+          <span>Asistente (KERNEL)</span>
+        </button>
         <div className="start-menu-sep" />
         <button className="start-menu-item" onClick={onShutDown}>
           <span className="mi-icon">⏻</span>
