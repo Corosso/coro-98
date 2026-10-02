@@ -280,6 +280,7 @@ export default function Desktop() {
           onStart={() => setStartOpen((s) => !s)}
           onToggleTask={minimizeApp}
           onFocusTask={restoreAndFocus}
+          onAssistant={reopenAssistant}
         />
       </div>
 

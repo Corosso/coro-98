@@ -8,6 +8,7 @@ export default function Taskbar({
   onStart,
   onToggleTask,
   onFocusTask,
+  onAssistant,
 }) {
   const [time, setTime] = useState('');
 
@@ -47,6 +48,9 @@ export default function Taskbar({
         ))}
       </div>
       <div className="taskbar-tray">
+        <button className="tray-kernel" onClick={onAssistant} title="Abrir KERNEL">
+          🤖
+        </button>
         <span>🔊</span>
         <span>{time}</span>
       </div>

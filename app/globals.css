@@ -331,6 +331,22 @@ button {
   font-size: 12px;
   box-shadow: inset 1px 1px 0 #000;
 }
+.tray-kernel {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  background: #001a06;
+  color: var(--accent);
+  border: none;
+  box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #004010;
+  cursor: pointer;
+}
+.tray-kernel:hover {
+  background: #00300b;
+}
 
 /* ─────────────────────────────────────────
    Start menu
